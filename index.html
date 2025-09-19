@@ -1,87 +1,125 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"> 
-        <meta name="author" content="Andrew">
-        <meta name="description" content="test page">
-        <meta name="keywords" content="test,проверка,html">
-        <link rel="stylesheet" href="css/main.css">
-        
-        <title>Fisrt site</title>
-    </head>
-    <body>
-        
-        <!--Коментарий-->
-        <h1 class="h11">Главная<small>1</small></h1>
-        <h2>Главная<big>2</big></h2>
-        <h3>Главная3</h3>
-        <h4>Главная4</h4>
-        <h5>Главная5</h5>
+<html lang="en">
 
-        <p class="test-styles">Lorem ipsum dolor sit amet <i>consectetur</i> adipisicing elit. <b class="h11">Aperiam, eum. Ullam voluptatem,</b> accusamus odio soluta atque nostrum officiis totam voluptate quis, eos non magni explicabo animi at temporibus inventore voluptates?
-        </p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>uHost</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">    
+    <link rel="stylesheet" href="main.css">
+</head>
 
-
+<body>
+        <header class="main-header">
         <div>
-            <p>Lorem ipsum dolor, sit <b>amet consectetur</b> adipisicing elit. Illo temporibus dolore sequi quibusdam accusantium, laudantium aperiam autem culpa earum dolor et vitae vel optio officiis dignissimos quidem enim facere voluptates?</p>
-
-
+            <a href="index.html" class="main-header__brand">
+                uHost
+            </a>
         </div>
-        <pre>function some () {
-            return "Some"
-        }</pre>
-        <ol start="1" type="i"><!--нумерованый список-->
-            <li>молоко</li>
-            <li>картошка</li>
-            <li>лук</li>
-            <li>молоко2</li>
-            <li>картошка2</li>
-            <li>лук2</li>
-        </ol>
-        <img src="https://makerworld.bblmw.com/makerworld/model/USb24104d5040fd3/design/2025-08-17_vpq62nrf0acz.jpeg?x-oss-process=image%2Fresize%2Cw_400%2Fformat%2Cwebp" width="50%" alt="описание картинки">
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="packages/index.html">Packages</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="customers/index.html">Customers</a>
+                </li>
+                <li class="main-nav__item main-nav__item--cta">
+                    <a href="start-hosting/index.html">Start Hosting</a>
+                </li>
+            </ul>
+        </nav>
+    </header>  
+    <main>
+        <section id="product-overview">
+            <h1>Get the freedom you deserve.</h1>
+        </section>
+        <section id="plans">
+            <h1 class="section-title">Choose Your Plan</h1>
+            <div>
+                <article class="plan">
+                    <h1 class="plan__title">FREE</h1>
+                    <h2 class="plan__price">$0/month</h2>
+                    <h3>For hobby projects or small teams.</h3>
+                    <ul class="plan__features">
+                        <li>1 Workspace</li>
+                        <li>Unlimited Traffic</li>
+                        <li>10GB Storage</li>
+                        <li>Basic Support</li>
+                    </ul>
+                    <div>
+                        <button class="plan__button">CHOOSE PLAN</button>
+                    </div>
+                </article>
+                <article class="plan plan--highlihted">
+                    <h1 class="plan__annotation">RECOMMENDED</h1>
+                    <h1 class="plan__title">PLUS</h1>
+                    <h2  class="plan__price">$29/month</h2>
+                    <h3>For ambitious projects.</h3>
+                    <ul class="plan__features">
+                        <li>5 Workspaces</li>
+                        <li>Unlimited Traffic</li>
+                        <li>100GB Storage</li>
+                        <li>Plus Support</li>
+                    </ul>
+                    <div>
+                        <button class="plan__button">CHOOSE PLAN</button>
+                    </div>
+                </article>
+                <article class="plan">
+                    <h1 class="plan__title">PREMIUM</h1>
+                    <h2  class="plan__price">$99/month</h2>
+                    <h3>Your enterprise solution.</h3>
+                    <ul class="plan__features">
+                        <li>10 Workspaces</li>
+                        <li>Unlimited Traffic</li>
+                        <li>Unlimited Storage</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <div>
+                        <button class="plan__button">CHOOSE PLAN</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="key-features">
+            <h1 class="section-title">Many Good Reasons to Stick Around</h1>
+            <ul class="key-feature__list">
+                <li class="key-feature">
+                    <div class="key-feature__image">
 
-        <ul type="square"><!--не нумированный список-->
-            <li>молоко </li>
-            <li>картошка</li>
-            <li>лук</li>
-        </ul>
-        <a href="https://www.instagram.com/andrew.lucky.94" target="_blank">Моя инста</a><br>
-        <a href="/about.html">А ну как тыкни</a><br>
-        <a href="#bottomOfPage">Вниз</a><!--нужно увеличить страницу чтоб чекнуть--><br>
-        
-        <code>let x = 0;</code>
+                    </div>
+                    <p class="key-feature__description">3,857,000 Trusting Customers</p>
+                </li>
+                <li class="key-feature">
+                    <div class="key-feature__image">
 
-        <p>Просто <b>текст</b></p>
+                    </div class="key-feature__image">
+                    <p class="key-feature__description">99.999% Uptime Guarantee</p>
+                </li>
+                <li class="key-feature">
+                    <div class="key-feature__image">
 
-        <abbr title="что такое">наведи сюда</abbr>
+                    </div>
+                    <p class="key-feature__description">Lightning Fast CDN</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <nav>
+            <ul class="main-footer__links">
+                <li class="main-footer__link">
+                    <a href="#"> Support</a>
+                </li>
+                <li class="main-footer__link">
+                    <a href="#"> Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
 
-        <address> San Francisco, CA</address>
-
-        <table border="1" width="700px">
-            <thead>
-                <tr>
-                    <th>Имя</th>
-                    <th>фамилия</th>
-                </tr>
-            </thead>
-            <tbody align="center">
-                <tr>
-                    <td> John</td>
-                    <td>Dale</td>
-                </tr>
-                <tr>
-                    <td> John2</td>
-                    <td>Dale2</td>  
-                </tr>
-                <tr>
-                    <td> John3</td>
-                    <td>Dale3</td>
-
-                </tr>
-            </tbody>
-
-
-        </table>
-
-    </body>
 </html>
